@@ -21,7 +21,7 @@ public class JavaVMStackSOF {
             System.out.println(oom.stackLength);
             throw e;
         }
-        List<HeapOOM.OOMObject> list = new ArrayList<HeapOOM.OOMObject>();
+
 
 
     }
