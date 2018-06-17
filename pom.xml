@@ -8,5 +8,17 @@
     <artifactId>JdkSource</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.eclipse.core/org.eclipse.core.runtime -->
+        <dependency>
+            <groupId>org.eclipse.core</groupId>
+            <artifactId>org.eclipse.core.runtime</artifactId>
+            <version>3.7.0</version>
+        </dependency>
+
+    </dependencies>
+
+
 
 </project>
