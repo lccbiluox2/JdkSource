@@ -1,5 +1,6 @@
-// Generated from /Users/lcc/IdeaProjects/JdkSource/src/main/java/com/antlr/Cal.g4 by ANTLR 4.7
-package com.antlr.out;
+// Generated from /Users/lcc/IdeaProjects/JdkSource/src/main/java/com/antlr/Cal.g4 by ANTLR 4.5
+package com.antlr.cal;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -11,94 +12,94 @@ public interface CalListener extends ParseTreeListener {
 	 * Enter a parse tree produced by {@link CalParser#prog}.
 	 * @param ctx the parse tree
 	 */
-	void enterProg(CalParser.ProgContext ctx);
+	void enterProg(@NotNull CalParser.ProgContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link CalParser#prog}.
 	 * @param ctx the parse tree
 	 */
-	void exitProg(CalParser.ProgContext ctx);
+	void exitProg(@NotNull CalParser.ProgContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code Assign}
 	 * labeled alternative in {@link CalParser#stat}.
 	 * @param ctx the parse tree
 	 */
-	void enterAssign(CalParser.AssignContext ctx);
+	void enterAssign(@NotNull CalParser.AssignContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code Assign}
 	 * labeled alternative in {@link CalParser#stat}.
 	 * @param ctx the parse tree
 	 */
-	void exitAssign(CalParser.AssignContext ctx);
+	void exitAssign(@NotNull CalParser.AssignContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code printExpr}
 	 * labeled alternative in {@link CalParser#stat}.
 	 * @param ctx the parse tree
 	 */
-	void enterPrintExpr(CalParser.PrintExprContext ctx);
+	void enterPrintExpr(@NotNull CalParser.PrintExprContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code printExpr}
 	 * labeled alternative in {@link CalParser#stat}.
 	 * @param ctx the parse tree
 	 */
-	void exitPrintExpr(CalParser.PrintExprContext ctx);
+	void exitPrintExpr(@NotNull CalParser.PrintExprContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code parens}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterParens(CalParser.ParensContext ctx);
+	void enterParens(@NotNull CalParser.ParensContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code parens}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitParens(CalParser.ParensContext ctx);
+	void exitParens(@NotNull CalParser.ParensContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code MulDiv}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterMulDiv(CalParser.MulDivContext ctx);
+	void enterMulDiv(@NotNull CalParser.MulDivContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code MulDiv}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitMulDiv(CalParser.MulDivContext ctx);
+	void exitMulDiv(@NotNull CalParser.MulDivContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code AddSub}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterAddSub(CalParser.AddSubContext ctx);
+	void enterAddSub(@NotNull CalParser.AddSubContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code AddSub}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitAddSub(CalParser.AddSubContext ctx);
+	void exitAddSub(@NotNull CalParser.AddSubContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code NUM}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterNUM(CalParser.NUMContext ctx);
+	void enterNUM(@NotNull CalParser.NUMContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code NUM}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitNUM(CalParser.NUMContext ctx);
+	void exitNUM(@NotNull CalParser.NUMContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code ID}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterID(CalParser.IDContext ctx);
+	void enterID(@NotNull CalParser.IDContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code ID}
 	 * labeled alternative in {@link CalParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitID(CalParser.IDContext ctx);
+	void exitID(@NotNull CalParser.IDContext ctx);
 }

@@ -1,5 +1,5 @@
-// Generated from /Users/lcc/IdeaProjects/JdkSource/src/main/java/com/antlr/Cal.g4 by ANTLR 4.7
-package com.antlr.out;
+// Generated from /Users/lcc/IdeaProjects/JdkSource/src/main/java/com/antlr/Cal.g4 by ANTLR 4.5
+package com.antlr.cal;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class CalParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.5", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -60,7 +60,7 @@ public class CalParser extends Parser {
 	}
 
 	@Override
-
+	@NotNull
 	public Vocabulary getVocabulary() {
 		return VOCABULARY;
 	}
@@ -120,7 +120,7 @@ public class CalParser extends Parser {
 			do {
 				{
 				{
-				setState(6);
+				setState(6); 
 				stat();
 				}
 				}
@@ -197,19 +197,18 @@ public class CalParser extends Parser {
 		enterRule(_localctx, 2, RULE_stat);
 		try {
 			setState(22);
-			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ID:
 				_localctx = new AssignContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(11);
+				setState(11); 
 				match(ID);
-				setState(12);
+				setState(12); 
 				match(T__0);
-				setState(13);
+				setState(13); 
 				expr(0);
-				setState(14);
+				setState(14); 
 				match(T__1);
 				}
 				break;
@@ -217,15 +216,15 @@ public class CalParser extends Parser {
 				_localctx = new PrintExprContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(16);
+				setState(16); 
 				match(T__2);
-				setState(17);
+				setState(17); 
 				match(T__3);
-				setState(18);
+				setState(18); 
 				expr(0);
-				setState(19);
+				setState(19); 
 				match(T__4);
-				setState(20);
+				setState(20); 
 				match(T__1);
 				}
 				break;
@@ -372,7 +371,6 @@ public class CalParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(31);
-			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case NUM:
 				{
@@ -380,7 +378,7 @@ public class CalParser extends Parser {
 				_ctx = _localctx;
 				_prevctx = _localctx;
 
-				setState(25);
+				setState(25); 
 				match(NUM);
 				}
 				break;
@@ -389,7 +387,7 @@ public class CalParser extends Parser {
 				_localctx = new IDContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(26);
+				setState(26); 
 				match(ID);
 				}
 				break;
@@ -398,11 +396,11 @@ public class CalParser extends Parser {
 				_localctx = new ParensContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
-				setState(27);
+				setState(27); 
 				match(T__3);
-				setState(28);
+				setState(28); 
 				expr(0);
-				setState(29);
+				setState(29); 
 				match(T__4);
 				}
 				break;
@@ -419,7 +417,6 @@ public class CalParser extends Parser {
 					_prevctx = _localctx;
 					{
 					setState(39);
-					_errHandler.sync(this);
 					switch ( getInterpreter().adaptivePredict(_input,3,_ctx) ) {
 					case 1:
 						{
@@ -433,12 +430,8 @@ public class CalParser extends Parser {
 						if ( !(_la==MUL || _la==DIV) ) {
 							((MulDivContext)_localctx).op = (Token)_errHandler.recoverInline(this);
 						}
-						else {
-							if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
-							_errHandler.reportMatch(this);
-							consume();
-						}
-						setState(35);
+						consume();
+						setState(35); 
 						expr(6);
 						}
 						break;
@@ -454,12 +447,8 @@ public class CalParser extends Parser {
 						if ( !(_la==ADD || _la==SUB) ) {
 							((AddSubContext)_localctx).op = (Token)_errHandler.recoverInline(this);
 						}
-						else {
-							if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
-							_errHandler.reportMatch(this);
-							consume();
-						}
-						setState(38);
+						consume();
+						setState(38); 
 						expr(5);
 						}
 						break;
@@ -485,35 +474,35 @@ public class CalParser extends Parser {
 
 	public boolean sempred(RuleContext _localctx, int ruleIndex, int predIndex) {
 		switch (ruleIndex) {
-		case 2:
+		case 2: 
 			return expr_sempred((ExprContext)_localctx, predIndex);
 		}
 		return true;
 	}
 	private boolean expr_sempred(ExprContext _localctx, int predIndex) {
 		switch (predIndex) {
-		case 0:
+		case 0: 
 			return precpred(_ctx, 5);
-		case 1:
+		case 1: 
 			return precpred(_ctx, 4);
 		}
 		return true;
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\16/\4\2\t\2\4\3\t"+
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\16/\4\2\t\2\4\3\t"+
 		"\3\4\4\t\4\3\2\6\2\n\n\2\r\2\16\2\13\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3"+
 		"\3\3\3\3\3\5\3\31\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\5\4\"\n\4\3\4\3\4\3"+
 		"\4\3\4\3\4\3\4\7\4*\n\4\f\4\16\4-\13\4\3\4\2\3\6\5\2\4\6\2\4\3\2\b\t\3"+
-		"\2\n\13\2\61\2\t\3\2\2\2\4\30\3\2\2\2\6!\3\2\2\2\b\n\5\4\3\2\t\b\3\2\2"+
-		"\2\n\13\3\2\2\2\13\t\3\2\2\2\13\f\3\2\2\2\f\3\3\2\2\2\r\16\7\f\2\2\16"+
-		"\17\7\3\2\2\17\20\5\6\4\2\20\21\7\4\2\2\21\31\3\2\2\2\22\23\7\5\2\2\23"+
-		"\24\7\6\2\2\24\25\5\6\4\2\25\26\7\7\2\2\26\27\7\4\2\2\27\31\3\2\2\2\30"+
-		"\r\3\2\2\2\30\22\3\2\2\2\31\5\3\2\2\2\32\33\b\4\1\2\33\"\7\r\2\2\34\""+
-		"\7\f\2\2\35\36\7\6\2\2\36\37\5\6\4\2\37 \7\7\2\2 \"\3\2\2\2!\32\3\2\2"+
-		"\2!\34\3\2\2\2!\35\3\2\2\2\"+\3\2\2\2#$\f\7\2\2$%\t\2\2\2%*\5\6\4\b&\'"+
-		"\f\6\2\2\'(\t\3\2\2(*\5\6\4\7)#\3\2\2\2)&\3\2\2\2*-\3\2\2\2+)\3\2\2\2"+
-		"+,\3\2\2\2,\7\3\2\2\2-+\3\2\2\2\7\13\30!)+";
+		"\2\n\13\61\2\t\3\2\2\2\4\30\3\2\2\2\6!\3\2\2\2\b\n\5\4\3\2\t\b\3\2\2\2"+
+		"\n\13\3\2\2\2\13\t\3\2\2\2\13\f\3\2\2\2\f\3\3\2\2\2\r\16\7\f\2\2\16\17"+
+		"\7\3\2\2\17\20\5\6\4\2\20\21\7\4\2\2\21\31\3\2\2\2\22\23\7\5\2\2\23\24"+
+		"\7\6\2\2\24\25\5\6\4\2\25\26\7\7\2\2\26\27\7\4\2\2\27\31\3\2\2\2\30\r"+
+		"\3\2\2\2\30\22\3\2\2\2\31\5\3\2\2\2\32\33\b\4\1\2\33\"\7\r\2\2\34\"\7"+
+		"\f\2\2\35\36\7\6\2\2\36\37\5\6\4\2\37 \7\7\2\2 \"\3\2\2\2!\32\3\2\2\2"+
+		"!\34\3\2\2\2!\35\3\2\2\2\"+\3\2\2\2#$\f\7\2\2$%\t\2\2\2%*\5\6\4\b&\'\f"+
+		"\6\2\2\'(\t\3\2\2(*\5\6\4\7)#\3\2\2\2)&\3\2\2\2*-\3\2\2\2+)\3\2\2\2+,"+
+		"\3\2\2\2,\7\3\2\2\2-+\3\2\2\2\7\13\30!)+";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

@@ -1,5 +1,6 @@
-// Generated from /Users/lcc/IdeaProjects/JdkSource/src/main/java/com/antlr/Cal.g4 by ANTLR 4.7
-package com.antlr.out;
+// Generated from /Users/lcc/IdeaProjects/JdkSource/src/main/java/com/antlr/Cal.g4 by ANTLR 4.5
+package com.antlr.cal;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -17,54 +18,54 @@ public class CalBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements Ca
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitProg(CalParser.ProgContext ctx) { return visitChildren(ctx); }
+	@Override public T visitProg(@NotNull CalParser.ProgContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitAssign(CalParser.AssignContext ctx) { return visitChildren(ctx); }
+	@Override public T visitAssign(@NotNull CalParser.AssignContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitPrintExpr(CalParser.PrintExprContext ctx) { return visitChildren(ctx); }
+	@Override public T visitPrintExpr(@NotNull CalParser.PrintExprContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitParens(CalParser.ParensContext ctx) { return visitChildren(ctx); }
+	@Override public T visitParens(@NotNull CalParser.ParensContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitMulDiv(CalParser.MulDivContext ctx) { return visitChildren(ctx); }
+	@Override public T visitMulDiv(@NotNull CalParser.MulDivContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitAddSub(CalParser.AddSubContext ctx) { return visitChildren(ctx); }
+	@Override public T visitAddSub(@NotNull CalParser.AddSubContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitNUM(CalParser.NUMContext ctx) { return visitChildren(ctx); }
+	@Override public T visitNUM(@NotNull CalParser.NUMContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitID(CalParser.IDContext ctx) { return visitChildren(ctx); }
+	@Override public T visitID(@NotNull CalParser.IDContext ctx) { return visitChildren(ctx); }
 }
